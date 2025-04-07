@@ -1,0 +1,69 @@
+body {
+    padding-top: 56px;
+}
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: inherit;
+}
+.container{
+    max-width: 1000px;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+}
+#home h2{
+    font-size: 15px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+@media (max-width: 767.98px) { /* Bootstrap's breakpoint for small devices (mobile) */
+    section>.container>.row, .text-left{
+        text-align: center !important;
+    }
+    .icon-container {
+        margin: auto;
+    }
+
+    .d-flex {
+        display: block !important;
+    }
+
+    img#profile-image {
+        margin-top: 15px;
+    }
+}
+
+ /* Contenedor flexible para los iconos */
+ .icon-container {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    align-items: center; /* Centra verticalmente los iconos */
+    justify-content: flex-start; /* Alinea los iconos al inicio */
+    gap: 0; /* Elimina el espacio entre los iconos */
+    max-width: 230px;
+    margin-top: -13px;
+}
+
+/* Estilo para los SVG */
+.icon-container svg {
+    width: 38px;
+    height: 41px;
+    display: block;
+    padding: 4px;
+}
+
